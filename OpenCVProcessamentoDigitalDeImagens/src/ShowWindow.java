@@ -23,7 +23,8 @@ public class ShowWindow extends JFrame {
     
     public static void showWindow(String nomeJanela, Mat picture) {
         frame = new JFrame(nomeJanela);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         frame.setSize(800, 800);
         image = matToBufferedImage(picture);
         JPanel panel = new JPanel() {
@@ -39,7 +40,8 @@ public class ShowWindow extends JFrame {
     
     public static void showWindow(String nomeJanela, Mat picture, int l, int a) {
         frame = new JFrame(nomeJanela);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         frame.setSize(800, 800);
         image = matToBufferedImage(picture);
         
